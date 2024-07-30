@@ -1,7 +1,5 @@
-FROM alpine:latest
+FROM ubuntu:latest
 WORKDIR /phython_app
 COPY . /phython_app
-RUN apk update && apk add python3 py3-pip git
-ENV spouse=kamesh
-ENV daughter=dia
+RUN apt-get update && apt-get install -y python3 python3-pip git
 ENTRYPOINT [ "python3", "app.py"]
