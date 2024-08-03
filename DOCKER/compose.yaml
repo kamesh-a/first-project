@@ -1,0 +1,9 @@
+name: app-compose
+
+services:
+  app:
+    build:
+      context: .
+    environment:
+      HUSBAND: KAMESH
+      WIFE: MADHU
